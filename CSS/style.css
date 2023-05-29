@@ -6,49 +6,6 @@ body {
   font-family: 'Noto Sans';
 }
 
-/*Sticky Header*/
-
-.sticky-header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  background-color: rgb(255, 255, 255);
-  text-align: center;
-  padding: 10px;
-  z-index: 9999; /* Ensure the header appears on top of other elements */
-  opacity: 0; /* Initially hide the header */
-  transition: opacity 0.3s;
-}
-
-.sticky-header.show {
-  opacity: 1; /* Show the header */
-}
-
-.header-text {
-  color: rgba(31, 150, 244, 1);
-    text-decoration: none;
-     font-weight: bold;
-     font-size: 20px;
-}
-
-
-  
-  @keyframes slideDown {
-    0% {
-      transform: translateY(-100%);
-    }
-    100% {
-      transform: translateY(0);
-    }
-  }
-
-  .header-text {
-    color: rgba(31, 150, 244, 1);
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 20px;
-  }
 
   .header-icons {
     display: flex;
@@ -66,11 +23,10 @@ body {
   /*Upper Log/Reg Header*/
 
   .header i {
-    margin-bottom: px; /* Adjust the value as needed */
-    margin-right: -5px; /* Adjust the value as needed */
+    margin-bottom: 0px; /* Adjust the value as needed */
+    margin-right: -10px; /* Adjust the value as needed */
   }
-
-
+  
   .header {
     display: flex;
     align-items: center;
@@ -81,22 +37,78 @@ body {
     margin-left: 0;
     margin-right: 0;
   }
-
-  .header-button {
+  
+  .header-button1 {
     color: white;
     background-color: transparent;
     border: none;
     font-weight: bold;
     font-size: 17px;
-    margin-left: 10px;
+    margin-left: 15px;
     cursor: pointer;
     text-decoration: none;
     margin-right: 14px; /* Add right margin */
   }
   
-  .header-button:last-child {
+.header-button2 {
+  color: white;
+  background-color: transparent;
+  border: none;
+  font-weight: bold;
+  font-size: 17px;
+  margin-left: 15px;
+  cursor: pointer;
+  text-decoration: none;
+  margin-right: 14px; /* Add right margin */
+}
+  
+  .header-button1:last-child {
     margin-right: 0; /* Remove right margin from the last button */
   }
+  
+  .header-button1 {
+    /* Add href style */
+    pointer-events: auto;
+    cursor: pointer;
+  }
+  
+  
+  .navbar-links {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    justify-content: flex-end;
+    margin: 0 120px;
+  }
+  
+  .navbar-links ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+  }
+  
+  .navbar-links li {
+    margin: 0 15px;
+  }
+  
+  .navbar-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 22px;
+    transition: transform 0.3s ease;
+  }
+  
+  .navbar-links li:hover {
+    transform: translateY(-5px);
+  }
+
+
+
+
+
   
 
   .navbar {

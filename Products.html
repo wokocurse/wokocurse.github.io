@@ -7,8 +7,7 @@
   <link rel="stylesheet" href="CSS/style.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-  <title>Little Winners - Home</title>
-
+  <title>Little Winners - Tickets</title>
   <style>
 
 .header {
@@ -32,96 +31,55 @@ background-color: #6E20AB;
   }
 
   </style>
-
-</head>
 <body>
-<header>
-  <div class="header">
-    <i class="fas fa-arrow-right"></i>
-    <a href="#" class="header-button">Sign Up / Sign In</a>
-    <i class="fas fa-shopping-basket"></i>
-    <a href="basket.html" class="header-button">Basket</a>
-  </div>
-</header>
-
-    <nav class="navbar">
-      <div class="navbar-logo">
-        <img src="logo.png" alt="Logo">
-      </div>
-      <div class="navbar-links">
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="Products.html">Tickets</a></li>
-          <li><a href="FAQ.html">FAQ</a></li>
-          <li><a href="Contact.html">Contact</a></li>
-        </ul>
-      </div>
-    </nav>
-    <div class="sticky-header">
-      <a href="Products.html" class="header-text">Summer Offer</a>
+  <header>
+    <div class="header">
+      <i class="fas fa-arrow-right"></i>
+      <a href="logANDreg.html" class="header-button1">Sign Up / Sign In</a>
+      <i class="fas fa-shopping-basket"></i>
+      <a href="basket.html" class="header-button2">Basket</a>
     </div>
-    <div class="header-icons">
-        <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
-        <a href="https://tiktok.com" target="_blank"><i class="fab fa-tiktok"></i></a>
-        <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
-      </div>
-      
-  
-    <script>
+  </header>
+  <nav class="navbar">
+    <div class="navbar-logo">
+      <img src="images/logo.png" alt="Logo">
+    </div>
+    <div class="navbar-links">
+      <ul>
+        <li><a href="index2.html">Home</a></li>
+        <li><a href="Products.html">Tickets</a></li>
+        <li><a href="FAQ.html">FAQ</a></li>
+        <li><a href="Contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+  <div class="header-icons">
+    <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+    <a href="https://tiktok.com" target="_blank"><i class="fab fa-tiktok"></i></a>
+    <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+  </div>
+
+  <script>
     window.addEventListener('scroll', function() {
       const header = document.querySelector('.sticky-header');
+      const headerLink = document.querySelector('#header-link');
       const scrollPosition = window.scrollY;
 
       if (scrollPosition > 0) {
         header.classList.add('show');
+        headerLink.style.pointerEvents = 'auto'; // Enable link clickability
       } else {
         header.classList.remove('show');
+        headerLink.style.pointerEvents = 'none'; // Disable link clickability
       }
     });
-    </script>
+  </script>
 
-    <style>
-        /* Add your CSS styles here */
-        .sticky-header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  background-color: white;
-  text-align: center;
-  padding: 10px;
-  z-index: 9999; /* Ensure the header appears on top of other elements */
-  opacity: 0; /* Initially hide the header */
-  transition: opacity 0.3s;
-}
-
-.sticky-header.show {
-  opacity: 1; /* Show the header */
-}
-
-        .header-text {
-            color: rgba(31, 150, 244, 1);
-            text-decoration: none;
-            font-weight: bold;
-            font-size: 20px;
-        }
-
-
-  
-  @keyframes slideDown {
-    0% {
-      transform: translateY(-100%);
-    }
-    100% {
-      transform: translateY(0);
-    }
-  }
-    </style>
-
+<!-- Text on banner -->
 
 </header>
 <div class="hero-section">
-  <img src="banner2.png" alt="Hero Image" class="hero-image">
+  <img src="images/Banners/banner-spiderman.png" alt="Hero Image" class="hero-image">
   <div class="hero-content">
     <div class="hero-textbox">
       <h2 class="hero-heading">Subscriptions!</h2>
@@ -131,6 +89,8 @@ background-color: #6E20AB;
   </div>
 </div>
 
+<!-- Phone Text on banner -->
+
   <div class="textbox1-container">
     <h2 class="textbox1-heading">Subscriptions!</h2>
     <p class="textbox1-paragraph">With £4 ONLY you can participatein 5 competitions every month! Subscribe NOW!</p>
@@ -138,13 +98,14 @@ background-color: #6E20AB;
   </div>
 </div>
 
+<!-- Products -->
+
 <br>
 <br>
 <div class="card-container">
-
 <div class="card">
   <a href="Products.html">
-    <img src="2.jpg" alt="Denim Jeans" style="width:100%">
+    <img src="images/Products/2.jpg" style="width:100%">
   </a>
   <h1>Marvel Event Competition</h1>
   <p class="price">£1.99</p>
@@ -155,7 +116,7 @@ background-color: #6E20AB;
 
 <div class="card">
   <a href="Products.html">
-    <img src="3.jpg" alt="Denim Jeans" style="width:100%">
+    <img src="images/Products/3.jpg" alt="Denim Jeans" style="width:100%">
   </a>
   <h1>Spider-Man Competition</h1>
   <p class="price">£1.25</p>
@@ -163,7 +124,4 @@ background-color: #6E20AB;
   </div>
 </div>
 </div>
-
-
-
-  </header>
+</header>
