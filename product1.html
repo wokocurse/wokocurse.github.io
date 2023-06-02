@@ -5,6 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="CSS/style.css">
+  <link rel="stylesheet" href="footer.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
   <title>Little Winners - Home</title>
@@ -20,7 +21,7 @@
   </header>
   <nav class="navbar">
     <div class="navbar-logo">
-      <img src="images/logo.png" alt="Logo">
+      <img src="logo.png" alt="Logo">
     </div>
     <div class="navbar-links">
       <ul>
@@ -56,27 +57,140 @@
 </body>
 </html>
 
+<style>
+  .product-container {
+    display: flex;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+  
+  .image-container {
+    flex: 0 0 350px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    overflow: hidden;
+  }
+  
+  .image-container img {
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+  }
+  
+  .text-container {
+    flex: 1;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .text-container h2 {
+    font-size: 32px;
+    margin-top: 0;
+  }
+  
+  .text-container p {
+    font-size: 20px;
+    color: #888;
+  }
+  
+  .text-container .order-button {
+    display: block;
+    width: 180px;
+    margin-top: 40px;
+    font-size: 18px;
+    padding: 18px;
+    text-align: center;
+    border-radius: 15px;
+    background-color: #f7f7f7;
+    color: #333;
+    border: 1px solid #ccc;
+    transition: background-color 0.3s ease;
+  }
+  
+  .text-container .order-button:hover {
+    background-color: #2196F3;
+    color: #fff;
+  }
 
-<!-- Text on banner -->
 
-</header>
-<div class="hero-section">
-  <img src="images/Banners/banner-spiderman.png" alt="Hero Image" class="hero-image">
-  <div class="hero-content">
-    <div class="hero-textbox">
-      <h2 class="hero-heading">Subscriptions!</h2>
-      <p class="hero-paragraph">With £4 ONLY you can participate <br>in 5 competitions every month! <br>Subscribe NOW!</p>
-      <a href="Products.html" class="hero-button">Find Out!</a>
-    </div>
+
+  .header {
+    background-color: #5A22A1;
+  }
+
+.navbar {
+
+background-color: #6E20AB;
+
+}
+
+.textbox1-container {
+
+background-color: #6E20AB;
+
+}
+
+.header-icons a {
+  color: #6E20AB;
+  }
+
+  </style>
+
+  <br>
+  <br>
+  <br>
+  
+<div class="product-container">
+  <div class="image-container">
+    <img src="2.jpg" alt="Product Image">
+  </div>
+  <div class="text-container">
+    <h2>Spider-Man Event</h2>
+    <br>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis, harum quod architecto laudantium ullam asperiores eos natus esse consectetur. Ullam mollitia non nesciunt fuga quas deserunt tenetur, voluptates labore numquam!</p>
+    <br>
+    <p><small>1.25£</small></p>
+    <button class="order-button">Order Now</button>
   </div>
 </div>
 
-<!-- Phone Text on banner -->
+ <!--FONT AWESOME-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-  <div class="textbox1-container">
-    <h2 class="textbox1-heading">Subscriptions!</h2>
-    <p class="textbox1-paragraph">With £4 ONLY you can participatein 5 competitions every month! Subscribe NOW!</p>
-    <a href="Products.html" class="textbox1-button">Find Out!</a>
-  </div>
+<!--GOOGLE FONTS-->
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Play&display=swap" rel="stylesheet"> 
+</head>
+<body>
+<footer>
+
+<div class="footer">
+<div class="row">
+<a href="https://facebook.com" target="_blank"><i class="fa fa-facebook"></i></a>
+<a href="https://instagram.com" target="_blank"><i class="fa fa-instagram"></i></a>
+<a href="https://youtube.com" target="_blank"><i class="fa fa-youtube"></i></a>
+<a href="https://twitter.com" target="_blank"><i class="fa fa-twitter"></i></a>
 </div>
+
+<div class="row">
+<ul>
+<li><a href="Index2.html">Home</a></li>
+<li><a href="#">Terms & Conditions</a></li>
+<li><a href="Products.html">Tickets</a></li>
+<li><a href="FAQ.html">FAQ</a></li>
+<li><a href="Contact.html">Contact us</a></li>
+</ul>
+</div>
+
+<div class="row">
+Little Winners Competitions Copyright © 2023 - All rights reserved
+</div>
+</div>
+</footer> 
 

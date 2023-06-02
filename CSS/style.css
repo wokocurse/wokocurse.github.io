@@ -15,7 +15,7 @@ body {
   }
   
   .header-icons a {
-    color: rgba(31, 150, 244, 1);
+    color:rgb(31, 88, 244);
     font-size: 20px;
     margin: 0 10px; /* Adjust the margin as desired */
   }
@@ -30,7 +30,7 @@ body {
   .header {
     display: flex;
     align-items: center;
-    background-color: rgb(0, 98, 255);
+    background-color: rgb(31, 88, 244);
     display: flex;
     justify-content: flex-end;
     padding: 10px 20px;
@@ -112,7 +112,7 @@ body {
   
 
   .navbar {
-    background-color: rgba(31, 150, 244, 1);
+    background-color: rgb(44, 109, 247);
     overflow: hidden;
     display: flex;
     justify-content: flex-start;
@@ -257,7 +257,7 @@ body {
 
 .hero-button {
   font-weight: bold;
-  display: block;
+  display: inline-block;
   margin: 10px 0;
   padding: 10px 20px;
   background-color: transparent;
@@ -266,8 +266,8 @@ body {
   border-radius: 15px;
   transition: background-color 0.3s, color 0.3s;
   text-decoration: none;
-  max-width: 70px;
 }
+
 
 .hero-button:hover {
   background-color: #fff;

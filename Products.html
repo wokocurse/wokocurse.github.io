@@ -5,32 +5,29 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="CSS/style.css">
+  <link rel="stylesheet" href="footer.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
   <title>Little Winners - Tickets</title>
   <style>
+    .header {
+      background-color: #5A22A1;
+    }
 
-.header {
-    background-color: #5A22A1;
-  }
+    .navbar {
+      background-color: #6E20AB;
+    }
 
-.navbar {
+    .textbox1-container {
+      background-color: #6E20AB;
+    }
 
-background-color: #6E20AB;
-
-}
-
-.textbox1-container {
-
-background-color: #6E20AB;
-
-}
-
-.header-icons a {
-  color: #6E20AB;
-  }
-
+    .header-icons a {
+      color: #6E20AB;
+    }
   </style>
+</head>
+    
 <body>
   <header>
     <div class="header">
@@ -40,6 +37,7 @@ background-color: #6E20AB;
       <a href="basket.html" class="header-button2">Basket</a>
     </div>
   </header>
+  
   <nav class="navbar">
     <div class="navbar-logo">
       <img src="logo.png" alt="Logo">
@@ -53,11 +51,80 @@ background-color: #6E20AB;
       </ul>
     </div>
   </nav>
+  
   <div class="header-icons">
     <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
     <a href="https://tiktok.com" target="_blank"><i class="fab fa-tiktok"></i></a>
     <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
   </div>
+
+  <!-- Text on banner -->
+  <div class="hero-section">
+    <img src="banner-spiderman.png" alt="Hero Image" class="hero-image">
+    <div class="hero-content">
+      <div class="hero-textbox">
+        <h2 class="hero-heading">New Event!</h2>
+        <p class="hero-paragraph">Join our competitions now <br>and get the chance to walk away <br>with a Spider-Man themed prize</p>
+        <a href="Products.html" class="hero-button">Join Now!</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Phone Text on banner -->
+  <div class="textbox1-container">
+    <h2 class="textbox1-heading">New Event!</h2>
+    <p class="textbox1-paragraph">Join our competitions now and get the chance to walk away with a Spider-Man themed prize</p>
+    <a href="Products.html" class="textbox1-button">Join Now!</a>
+  </div>
+
+  <!-- Products -->
+  <br>
+  <br>
+  <div class="card-container">
+    <div class="card">
+      <a href="product1.html">
+        <img src="2.jpg" style="width:100%">
+      </a>
+      <h1>Marvel Event Competition</h1>
+      <p class="price">£1.99</p>
+      <div class="card-content"></div>
+    </div>
+
+    <div class="card">
+      <a href="Product2.html">
+        <img src="3.jpg" style="width:100%">
+      </a>
+      <h1>Spider-Man Competition</h1>
+      <p class="price">£1.25</p>
+      <div class="card-content"></div>
+    </div>
+  </div>
+
+  <footer>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Play&display=swap" rel="stylesheet"> 
+    <div class="footer">
+      <div class="row">
+        <a href="https://facebook.com" target="_blank"><i class="fa fa-facebook"></i></a>
+        <a href="https://instagram.com" target="_blank"><i class="fa fa-instagram"></i></a>
+        <a href="https://youtube.com" target="_blank"><i class="fa fa-youtube"></i></a>
+        <a href="https://twitter.com" target="_blank"><i class="fa fa-twitter"></i></a>
+      </div>
+      <div class="row">
+        <ul>
+          <li><a href="Index2.html">Home</a></li>
+          <li><a href="#">Terms & Conditions</a></li>
+          <li><a href="Products.html">Tickets</a></li>
+          <li><a href="FAQ.html">FAQ</a></li>
+          <li><a href="Contact.html">Contact us</a></li>
+        </ul>
+      </div>
+      <div class="row">
+        Little Winners Competitions &copy; 2023 - All rights reserved
+      </div>
+    </div>
+  </footer>
 
   <script>
     window.addEventListener('scroll', function() {
@@ -74,54 +141,5 @@ background-color: #6E20AB;
       }
     });
   </script>
-
-<!-- Text on banner -->
-
-</header>
-<div class="hero-section">
-  <img src="banner-spiderman.png" alt="Hero Image" class="hero-image">
-  <div class="hero-content">
-    <div class="hero-textbox">
-      <h2 class="hero-heading">Subscriptions!</h2>
-      <p class="hero-paragraph">With £4 ONLY you can participate <br>in 5 competitions every month! <br>Subscribe NOW!</p>
-      <a href="Products.html" class="hero-button">Find Out!</a>
-    </div>
-  </div>
-</div>
-
-<!-- Phone Text on banner -->
-
-  <div class="textbox1-container">
-    <h2 class="textbox1-heading">Subscriptions!</h2>
-    <p class="textbox1-paragraph">With £4 ONLY you can participatein 5 competitions every month! Subscribe NOW!</p>
-    <a href="Products.html" class="textbox1-button">Find Out!</a>
-  </div>
-</div>
-
-<!-- Products -->
-
-<br>
-<br>
-<div class="card-container">
-<div class="card">
-  <a href="Products.html">
-    <img src="2.jpg" style="width:100%">
-  </a>
-  <h1>Marvel Event Competition</h1>
-  <p class="price">£1.99</p>
-  <div class="card-content">
-  </div>
-</div>
-
-
-<div class="card">
-  <a href="Products.html">
-    <img src="3.jpg" alt="Denim Jeans" style="width:100%">
-  </a>
-  <h1>Spider-Man Competition</h1>
-  <p class="price">£1.25</p>
-  <div class="card-content">
-  </div>
-</div>
-</div>
-</header>
+</body>
+</html>
